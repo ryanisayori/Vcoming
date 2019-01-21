@@ -1,0 +1,92 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+.topbar {
+    width: 100%;
+}
+body {
+    padding: 0px;
+    margin: 0;
+}
+table, th , td {
+    border-collapse: collapse;
+}
+.tr > th {
+    text-align: center;
+    justify-content: center;
+    border: none;
+    background-color: #343a40;
+    height: 56px;
+}
+.tr > th > a {
+    color: #c3c3c3;
+    text-decoration: none;
+}
+.topbar > .tr {
+    width: 25%;
+}
+@media screen and (min-width: 661px) {
+    .smallerThan643 {
+        display: none;
+    }
+}
+@media screen and (max-width: 660px) {
+    .topbar {
+        display: none;
+    }
+}
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.header > p {
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+    font-family: 'Philosopher', sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 6.5vw;
+    font-style: italic;
+}
+.img-next {
+    float: left;
+}
+.dtht {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.text {
+    list-style: none;
+    text-align: center;
+}
+.originOfCordyseps {
+    background-color: #dedede;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.originOfCordyseps > h4 {
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+    font-family: 'Philosopher', sans-serif;
+    color: gray;
+    font-size: 4vw;
+}
+.originOfCordyseps > * {
+    text-align: center;
+}
+.originOfCordyseps > p {
+    font-size: 3vw;
+    padding: 20px;
+}
+.fukend {
+    padding: 10px;
+}
+.fukend > footer > button > a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en, ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="pics/favicons/v2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Sign in to Vcoming</title>
+    <style type="text/css">
+        .container {
+            margin: 0 auto;
+            margin-top: 32px;
+            width: 308px;
+            height: 49px;
+        }
+        .container > a > img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        a {
+            text-decoration: none;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        .sign-in-to-vkings {
+            margin: 0 auto;
+            width: 308px;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        .sign-in-to-vkings-text {
+            font-size: 24px;
+            font-weight: 300px;
+            letter-spacing: -.5px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+        .box {
+            margin: 0 auto;
+            width: 308px;
+            height: 235px;
+            border: 1px solid #d8dee2;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .password, .username, .forgot-password {
+            font-weight: 600px;
+            font-size: 14px;
+        }
+        .password, .username {
+            color: black;
+            margin-bottom: 10px;
+        }
+        .password {
+            float: left;
+        }
+        .forgot-password {
+            float: right;
+        }
+        input {
+            margin: 0 auto;
+            width: 266px;
+            height: 34px;
+            padding: 6px 8px;
+            border: 1px solid #d1d5da;
+            box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+            border-radius: 3px;
+        }
+        .signin-btn {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 266px;
+            width: 100%;
+            height: 34px;
+            background-color: #2ebb4e;
+            color: white;
+            border: 1px solid #2fad4d;
+            border-radius: 3px;
+            padding: 6px 12px;
+            text-align: center;
+        }
+        .box > form > .forgot-password > a {
+            text-decoration: none;
+        }
+        #username {
+            margin-bottom: 10px;
+        }
+        .finally {
+            margin: 0 auto;
+            margin-top: 16px;
+            margin-bottom: 10px;
+            width: 308px;
+            height: 53px;
+            padding: 15px 20px;
+            border: 1px solid #d8dee2;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .end {
+            margin: 0 auto;
+            width: 308px;
+            height: 98px;
+            padding: 40px 16px 40px 16px;
+        }
+        .end > a {
+            float: left;
+            font-size: 13px;
+            color: #0366d6;
+        }
+        #privacy {
+            padding-left: 19px;
+            padding-right: 19px;
+        }
+        #security {
+            padding-right: 19px;
+        }
+    </style>
+</head>
+<body>
+<div class="top-bar container">
+    <a href="#signin"><img src="pics/favicons/v2.ico" width="49px" height="auto" alt="Vcoming"></a>
+</div>
+<div style="margin: 0 auto; width: 308px; height: 30px;"></div>
+<div class="sign-in-to-vkings">
+    <p class="sign-in-to-vkings-text">Sign in to Vcoming</p>
+</div>
+<div class="box">
+    <form class="form">
+        <p class="username">Username or email address</p>
+        <input id="username" type="text" name="username">
+        <p class="password">Password</p>
+        <p class="forgot-password"><a href="#forgotpassword" style="font-weight: bold">Forgot password?</a></p>
+        <input id="password" type="password" name="password">
+        <button class="signin-btn">Sign in</button>
+    </form>
+</div>
+
+<div class="finally">
+    <p><span>New to Vcoming?</span> <a href="#createAnAccount">Create an account</a>.</p>
+</div>
+<div class="end">
+    <a href="#terms">Terms</a>
+    <a id="privacy" href="#privacy">Privacy</a>
+    <a id="security" href="#security">Security</a>
+    <a href="#contact" style="color: #8c8c8c">Contact Vcoming</a>
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    $(function () {
+       $(".signin-btn").hover(function () {
+          $(this).animate({opacity: "0.5"}, 300)}, function () {
+           $(this).animate({opacity: "1"}, 300);
+       });
+       $("#username").focus(function () {
+           $(this).css("background", "#f8ffa8");
+       });
+       $("#username").blur(function () {
+           $(this).css("background", "white");
+       });
+
+        $("#password").focus(function () {
+            $(this).css("background", "#f8ffa8");
+        });
+        $("#password").blur(function () {
+            $(this).css("background", "white");
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
