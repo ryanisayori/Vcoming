@@ -4,6 +4,7 @@ p {
 }
 .topbar {
     width: 100%;
+    z-index: 2000;
 }
 body {
     padding: 0px;
@@ -12,12 +13,21 @@ body {
 table, th , td {
     border-collapse: collapse;
 }
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
 .tr > th {
     text-align: center;
     justify-content: center;
     border: none;
-    background-color: #343a40;
-    height: 56px;
+    background-color: #313131;
+    height: 44px;
+    padding: 0;
 }
 .tr > th > a {
     color: #c3c3c3;
@@ -55,6 +65,19 @@ table, th , td {
         float: right;
         width: 50%;
         height: 48.15vw;
+    }
+    .benefitsTextTop > p {
+        font-size: 4vw;
+        color: #C0A087;
+        text-align: center;
+        font-style: italic
+    }
+}
+@media screen and (max-width: 575px) {
+    .benefitsTextTop > p {
+        text-align: center;
+        color: #C0A087;
+        font-size: 6vw;
     }
 }
 .header {
@@ -165,6 +188,18 @@ table, th , td {
         color: #47B55B;
     }
 }
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8 {
+    z-index: 50;
+    -webkit-transition: transform 1s, z-index 1s;
+    -moz-transition: transform 1s, z-index 1s;
+    -ms-transition: transform 1s, z-index 1s;
+    -o-transition: transform 1s, z-index 1s;
+    transition: transform 1s, z-index 1s;
+}
+.c1:hover, .c2:hover, .c3:hover, .c4:hover, .c5:hover, .c6:hover, .c7:hover, .c8:hover {
+    transform: scale(1.05);
+    z-index: 100;
+}
 .fukend {
     padding-left: 10px;
     padding-right: 10px;
@@ -177,5 +212,8 @@ table, th , td {
 @media screen and (max-width: 346px) {
     .fukend > footer > a > button {
         margin-bottom: 5px;
+    }
+    .fukend > footer > a {
+        margin-bottom: 15px;
     }
 }

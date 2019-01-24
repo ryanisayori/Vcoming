@@ -4,20 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Vcoming-Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Vcoming - All you need!</title>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="pics/favicons/v2.ico">
     <link rel="stylesheet" href="vcoming-home.css" type="text/css">
 </head>
 <body>
-<table class="topbar" style="width:100%">
+<table class="topbar sticky-Nav sticky-top" style="width:100%">
     <tr class="tr">
         <th style="width: 20%; z-index: -100"><a id="products" href="#products">Products</a></th>
         <th style="width: 20%; z-index: -100"><a id="health"  href="#health">Health</a></th>
         <th id="vcoming" style="width: 20%; z-index: -100">
             <a href="#vcoming">
-                <img src="pics/favicons/v2.ico" style="width: 40px; height: auto">
+                <img src="pics/favicons/v2.ico" style="width: 25px; height: auto">
             </a>
         </th>
         <th style="width: 20%; z-index: -100"><a id="contact" href="#contact">Contact</a></th>
@@ -29,8 +30,10 @@
         </th>
     </tr>
 </table>
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark smallerThan">
-    <a class="navbar-brand" href="#">Vcoming</a>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark smallerThan sticky-Nav sticky-top" style="position:
+-webkit-sticky;">
+    <a class="navbar-brand" style="color: #FCB017" href="#">Vcoming</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -99,38 +102,32 @@
     <!--<p>Sứ mệnh sức khỏe gia đình đến từ cộng đồng</p>-->
 <!--</div>-->
 <div class="jumbotron jumbotron-fluid" style="margin-top: 0px; margin-bottom: 5px">
-    <div class="container">
+    <div class="container" style="z-index: 10">
         <h1 class="display-4 slogan" style="font-style: italic;">Sứ mệnh sức khỏe gia đình đến từ cộng
             đồng!</h1>
     </div>
 </div>
 
-<div class="benefits" style="margin-bottom: 20px; background-color: white">
+<div class="benefits" style="margin-bottom: 40px; background-color: white">
     <div class="benefitsImage" style="background-color: white;float: left">
-        <img src="pics/Cordyseps-bowl.jpg" alt="Cordyseps">
+        <img class="img1" src="pics/Cordyseps-bowl.jpg" alt="Cordyseps">
     </div>
     <div class="benefitsTextTop" style="background-color: white">
-        <p style="font-size: 4vw; color: black; text-align: center; font-style: italic">
-            Đông trùng hạ thảo <strong style="color: yellow">Vcoming</strong> được tạo ra trong môi trường nhân tạo với
-            hàm lượng
-            dinh
-            dưỡng cao
+        <p>
+            Đông trùng hạ thảo <strong style="color: yellow">Vcoming</strong> được tạo ra trong môi trường nhân tạo với hàm lượng dinh dưỡng cao
         </p>
     </div>
-    <div class="benefitsTextSmall">
-        <p>Cordyseps is the best of all time for your health!</p>
-    </div>
 </div>
-
-<div class="card-columns" style="padding-left: 10px; padding-right: 10px; margin-top: 5px">
-    <div class="card" style="box-shadow: 10px 10px 10px #757575;">
+<!--cards-->
+<div class="card-columns" style="padding-left: 10px; padding-right: 10px; margin-top: 5px;">
+    <div class="card c1" style="box-shadow: 10px 10px 10px #757575;">
         <a href="javascript:void(0)"><img class="card-img-top" src="pics/privet.jpg" alt="Card image cap"></a>
         <div class="card-body">
             <h5 class="card-title">Card title that wraps to a new line</h5>
             <p class="card-text" style="text-align: justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
     </div>
-    <div class="card p-3" style="box-shadow: 10px 10px 10px #757575;">
+    <div class="card p-3 c2" style="box-shadow: 10px 10px 10px #757575;">
         <blockquote class="blockquote mb-0 card-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer class="blockquote-footer">
@@ -140,7 +137,7 @@
             </footer>
         </blockquote>
     </div>
-    <div class="card" style="box-shadow: 10px 10px 10px #757575;">
+    <div class="card c3" style="box-shadow: 10px 10px 10px #757575;">
         <a href="javascript:void(0)"><img class="card-img-top" src="pics/dtht1.jpg" alt="Card image cap"></a>
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -148,7 +145,7 @@
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
-    <div class="card bg-primary text-white text-center p-3" style="box-shadow: 10px 10px 10px #757575;">
+    <div class="card bg-primary text-white text-center p-3 c4" style="box-shadow: 10px 10px 10px #757575;">
         <blockquote class="blockquote mb-0">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
             <footer class="blockquote-footer">
@@ -158,17 +155,17 @@
             </footer>
         </blockquote>
     </div>
-    <div class="card text-center" style="box-shadow: 10px 10px 10px #757575;">
+    <div class="card text-center c5" style="box-shadow: 10px 10px 10px #757575;">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text" style="text-align: justify">This card has a regular title and short paragraphy of text below it.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
-    <div class="card" style="box-shadow: 10px 10px 10px #757575;">
+    <div class="card c6" style="box-shadow: 10px 10px 10px #757575;">
         <a href="javascript:void(0)"><img class="card-img" src="pics/dtht2.jpg" alt="Card image"></a>
     </div>
-    <div class="card p-3 text-right" style="box-shadow: 10px 10px 10px #757575;">
+    <div class="card p-3 text-right c7" style="box-shadow: 10px 10px 10px #757575;">
         <blockquote class="blockquote mb-0">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer class="blockquote-footer">
@@ -178,7 +175,7 @@
             </footer>
         </blockquote>
     </div>
-    <div class="card" style="box-shadow: 10px 10px 10px #757575;">
+    <div class="card c8" style="box-shadow: 10px 10px 10px #757575;">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text" style="text-align: justify">This is another card with title and supporting text below. This card has some
@@ -189,8 +186,8 @@
 </div>
 
 <div style="clear: both"></div>
-<div class="jumbotron jumbotron-fluid" style="margin-bottom: 10px">
-    <div class="container">
+<div class="jumbotron jumbotron-fluid" style="margin-bottom: 10px; margin-top: 10px">
+    <div class="container" style="z-index: 20">
         <h1 class="display-4">Đông trùng hạ thảo</h1>
         <p class="lead" style="text-align: justify">
             <strong>Đông trùng hạ thảo</strong> là một chi của nấm ascomycete (nấm sac) bao gồm khoảng 400 loài.
@@ -217,8 +214,9 @@
 
 <div class="fukend">
     <footer>
-        <a href="https://www.facebook.com/ryanisayori0164"><button type="button" class="btn btn-primary btn-sm">Facebook</button>
-        </a> <a href="javascript:void(0)"><button type="button" class="btn btn-danger btn-sm">
+        <a href="https://www.facebook.com/ryanisayori0164"><button type="button" class="btn btn-primary btn-sm" style="background-color: #395498">
+            Facebook</button>
+        </a> <a href="javascript:void(0)"><button type="button" class="btn btn-danger btn-sm" style="background-color: #A62E93">
         Instargram</button></a>
         <a href="mailto:ryanisayori@protonmail.com"><button type="button" class="btn btn-secondary btn-sm">Contact</button></a>
         <a href="https://paypal.me/cong104nova11?locale.x=en_US"><button type="button" class="btn btn-success btn-sm">Donate!
@@ -229,6 +227,28 @@
 <script src="jquery.js"></script>
 <script type="text/javascript">
     $(function () {
+            // grab the initial top offset of the navigation
+            var stickyNavTop = $('.sticky-Nav').offset().top;
+
+            // our function that decides weather the navigation bar should have "fixed" css position or not.
+            /*var stickyNav = function(){
+                var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+
+                // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+                // otherwise change it back to relative
+                if (scrollTop >= stickyNavTop) {
+                    $('.sticky-Nav').addClass('sticky');
+                } else {
+                    $('.sticky-Nav').removeClass('sticky');
+                }
+            };*/
+
+            /*stickyNav();*/
+            // and run it again every time you scroll
+            $(window).scroll(function() {
+                stickyNav();
+            });
+
         var check = true;
         $("#icon").click(function () {
             if (check) {
@@ -260,7 +280,48 @@
             $(this).animate({opacity: "0.7"}, 200)}, function () {
             $(this).animate({opacity: "1"}, 200);
         });
+        $("#where").hover(function () {
+            $(this).animate({opacity: "0.7"}, 200)}, function () {
+            $(this).animate({opacity: "1"}, 200);
+        });
         //buttons
+        //Animated cards
+
+
+
+        /*$(".c1").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });
+        $(".c2").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });
+        $(".c3").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });
+        $(".c4").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });
+        $(".c5").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });
+        $(".c6").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });
+        $(".c7").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });
+        $(".c8").hover(function () {
+            $(this).addClass("pulse animated delay-0.1")}, function () {
+            $(this).removeClass("pulse animated delay-0.1");
+        });*/
+        // Animated cards
     });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
