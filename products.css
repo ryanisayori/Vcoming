@@ -1,0 +1,100 @@
+.topbar {
+    width: 100%;
+    z-index: 2000;
+}
+body, p {
+    padding: 0px;
+    margin: 0;
+}
+table, th , td {
+    border-collapse: collapse;
+}
+.tr > th {
+    text-align: center;
+    justify-content: center;
+    border: none;
+    background-color: #313131;
+    height: 44px;
+    padding: 0;
+}
+.tr > th > a {
+    color: #c3c3c3;
+    text-decoration: none;
+}
+.topbar > .tr {
+    width: 25%;
+}
+@media screen and (max-width: 601px) {
+    .slogan {
+        font-size: 10vw;
+    }
+}
+@media screen and (min-width: 600px) {
+    .slogan {
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 681.98px) {
+    .smallerThan {
+        display: none;
+    }
+}
+@media screen and (max-width: 681px) {
+    .topbar {
+        display: none;
+    }
+}
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+/* ***************************** */
+.direction > a {
+    font-weight: bold;
+}
+.body {
+    margin-top: 0;
+    margin: 0 10px 10px 10px;
+}
+.cards {
+    margin-bottom: 35px;
+}
+.fx > .card-body > p {
+}
+.fx {
+    box-shadow: 10px 10px 10px #757575;
+    z-index: 50;
+    padding: 0;
+    -webkit-transition: transform 1s, z-index 1s;
+    -moz-transition: transform 1s, z-index 1s;
+    -ms-transition: transform 1s, z-index 1s;
+    -o-transition: transform 1s, z-index 1s;
+    transition: transform 1s, z-index 1s;
+}
+.fx:hover, .fx:focus {
+    transform: scale(1.05);
+}
+
+
+/* ***************************** */
+/* ||||||||||||||||||||||||||||| */
+.fukend {
+    background-color: #c8c8c8;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+footer {
+    padding: 10px;
+    height: auto;
+    background-color: #e9e9e9;
+    vertical-align: middle;
+    text-align: center;
+}
+@media screen and (max-width: 346px) {
+    .fukend > footer > a > button {
+        margin-bottom: 5px;
+    }
+    .fukend > footer > a {
+        margin-bottom: 15px;
+    }
+}
