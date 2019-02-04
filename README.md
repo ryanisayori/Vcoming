@@ -1,2 +1,2 @@
 # Vcoming
-A Mechandise website
+A Merchandise website
